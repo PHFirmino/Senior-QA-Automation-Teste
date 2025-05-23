@@ -69,8 +69,8 @@ Testes devem ser executados manualmente na seguinte ordem:
 Testes com dependências incluídas são executados automaticamente.
 
 > Erros Esperados:
-- Tentativa de cadastro de produto já existente.
-- Tentativa de cadastro de usuário já existente.
+- Tentativa de cadastro de produto já existente. Os dados desses produtos estão em fixture/produtos.json e podem ser alterados.
+- Tentativa de cadastro de usuário já existente. Os dados desses usuários estão em fixture/usuarios.json e podem ser alterados.
 
 ## Técnicas e Padrões Utilizados
 - **Pairwise Testing:** Aplicado nos testes de API para reduzir a quantidade de cenários necessários (mais de 200 combinações foram otimizadas).
