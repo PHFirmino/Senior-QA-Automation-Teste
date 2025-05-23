@@ -1,9 +1,9 @@
-# Teste Técnico - Cypress E2E e API
+# Teste Técnico - QA-Automation
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 - Node.js instalado na máquina.
 
-## 🚀 Instalação
+## Instalação
 Clone o repositório e instale as dependências:
 
 ```bash
@@ -13,7 +13,7 @@ npm init -y
 npm install --save-dev
 ```
 
-## 🧪 Executando os Testes
+## Executando os Testes
 Para abrir o painel do Cypress e executar os testes:
 
 ```bash
@@ -27,18 +27,18 @@ npm run cy:open
 4. Clique em **Start E2E Testing**.
 5. Selecione e execute o teste desejado.
 
-## 🧱 Estrutura dos Testes
+## Estrutura dos Testes
 
-### ✅ Testes de UI
+### Testes de UI
 
 **Telas testadas:**
 
 - **Tela de Login:** 6 cenários (erros e sucesso).
 - **Tela Inicial do Administrador:** 6 cenários.
 
-> ⚠️ Observação: Para testes de login bem-sucedido e acesso à tela inicial do administrador, é necessário que o usuário esteja previamente cadastrado. A criação do usuário é realizada automaticamente antes da execução desses testes.
+> Observação: Para testes de login bem-sucedido e acesso à tela inicial do administrador, é necessário que o usuário esteja previamente cadastrado. A criação do usuário é realizada automaticamente antes da execução desses testes.
 
-### ✅ Testes de API
+### Testes de API
 
 **Endpoints testados:**
 
@@ -58,7 +58,7 @@ npm run cy:open
 - Criar produto.
 - Buscar produto.
 
-## 📁 Organização dos Testes de Produto
+## Organização dos Testes de Produto
 
 ### `produtosSemDependencias/`
 Testes devem ser executados manualmente na seguinte ordem:
@@ -68,16 +68,12 @@ Testes devem ser executados manualmente na seguinte ordem:
 ### `produtosComDependencias/`
 Testes com dependências incluídas são executados automaticamente.
 
-> ⚠️ Erros Esperados:
+> Erros Esperados:
 - Tentativa de cadastro de produto já existente.
 - Tentativa de cadastro de usuário já existente.
 
-## 🛠️ Técnicas e Padrões Utilizados
+## Técnicas e Padrões Utilizados
 - **Pairwise Testing:** Aplicado nos testes de API para reduzir a quantidade de cenários necessários (mais de 200 combinações foram otimizadas).
 - **Page Object Model (POM):** Utilizado nos testes de UI.
 - **Fixtures:** Utilizadas em testes de UI e API para centralizar dados de entrada.
 - **Custom Commands:** Criados para reutilização de fluxos comuns em testes de UI e API.
-
----
-
-**Bons testes! ✅**
