@@ -1,21 +1,21 @@
 {
   "produtoCorretoParaSemDepencia": {
     "id": "e9rLCC936vqhJiuh",
-    "nome": "gdsgfdgdasdsadaddasdaddadsadaddasdaDASDASDsdadf",
+    "nome": "produtoCorretoParaSemDepencia",
     "preco": 430,
     "descricao": "Mouse Gamer",
     "quantidade": 3452
   },
   "produtoCorretoParaComDependenciaGet": {
-    "nome": "dsadasdadadasfdsfsdddasdadasdadadda",
+    "nome": "produtoCorretoParaComDependenciaGet",
     "preco": 430,
-    "descricao": "Modasdasuse Gamer",
+    "descricao": "Fone Gamer",
     "quantidade": 3452
   },
   "produtoCorretoParaComDependenciaPost": {
-    "nome": "gfgdhgdasddsadasdasdadasdasdadadasdadsdasddasddadsdsaddasdaadsdsdafh",
+    "nome": "produtoCorretoParaComDependenciaPost",
     "preco": 430,
-    "descricao": "Mouse Gamer",
+    "descricao": "Mousepad Gamer",
     "quantidade": 3452
   },
   "produtoIncorreto": {
