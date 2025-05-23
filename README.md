@@ -1,79 +1,83 @@
-# Senior-QA-Automation
-Teste Técnico
+# Teste Técnico - Cypress E2E e API
 
-Pré-requesitos:
-  É necessário ter o Node.js instalado.
-  https://nodejs.org/en/download
+## 📋 Pré-requisitos
+- Node.js instalado na máquina.
 
-  Instalação
-    Clone o repositório e instale as dependências:
-      git clone <URL_DO_REPOSITORIO>
-      cd <nome-da-pasta>
-      npm init -y
-      npm install --save-dev
-  
-  Executando os Testes
-    Para abrir o painel do Cypress, execute:
-      npm run cy:open
+## 🚀 Instalação
+Clone o repositório e instale as dependências:
 
-  Siga os passos abaixo:
-    Clique em Continue no painel do Cypress.
-    Selecione a opção E2E Testing.
-    Escolha o navegador de sua preferência.
-    Clique em Start E2E Testing.
-    Escolha e execute o teste desejado.
-    Escolha o teste que queira rodar, clique nele.
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DO_REPOSITORIO>
+npm init -y
+npm install --save-dev
+```
 
-  Estrutura dos Testes
-    Testes de UI
-      Telas testadas:
-      Tela de Login: 6 cenários testados (erros e sucesso).
-      Tela Inicial do Administrador: 6 cenários testados.
-      
-  Para os testes de login com sucesso e tela inicial do administrador, é necessário um usuário previamente cadastrado. 
-  Por isso, a criação do usuário é tratada antes do teste.
+## 🧪 Executando os Testes
+Para abrir o painel do Cypress e executar os testes:
 
-  Testes de API
-    Endpoints testados:
-    POST /produtos: 16 testes realizados.
-    GET /produtos: 12 testes realizados.
+```bash
+npm run cy:open
+```
 
-  Dependencias
-  Para testar a criação de produtos é necessário:
-    Criar um usuário.
-    Realizar login.
-    Obter o token.
-    Criar o produto.
+### Passos no Cypress:
+1. Clique em **Continue**.
+2. Selecione **E2E Testing**.
+3. Escolha o navegador desejado.
+4. Clique em **Start E2E Testing**.
+5. Selecione e execute o teste desejado.
 
-  Para os testes de busca por produtos:
-  Um produto deve já existir na basen então é necessário:
-    Criar um usuário.
-    Realizar login.
-    Obter o token.
-    Criar o produto.
-    Buscar pelo produto.
+## 🧱 Estrutura dos Testes
 
-  Organização dos testes de produto:
-  Pasta produtosSemDependencias
-    Os testes devem ser executados manualmente em ordem:
-    Buscar Produto: Criar Usuário > Login > Criar Produto > Buscar Produto.
-    Criar Produto: Criar Usuário > Login > Criar Produto.
+### ✅ Testes de UI
 
-  Pasta ProdutosComDependencias
-    Os testes são executados automaticamente com todas as dependências incluídas.
+**Telas testadas:**
 
-  Erros esperados:
-    Os únicos erros que podem ocorrer são tentativas de cadastrar:
-      Um produto já existente.
-      Um usuário já existente.
+- **Tela de Login:** 6 cenários (erros e sucesso).
+- **Tela Inicial do Administrador:** 6 cenários.
 
-  Técnicas e Padrões Utilizados
-    Pairwise Testing: Utilizei nos testes de API, por conta que se fosse testar todos os cenários, dariam mais de 200 testes por endpoint
-    Page Object Model (POM): Utilizei nos testes de UI.
-    Fixtures: Utilizei em UI e API.
-    Commands: Utilizei em UI e API.
+> ⚠️ Observação: Para testes de login bem-sucedido e acesso à tela inicial do administrador, é necessário que o usuário esteja previamente cadastrado. A criação do usuário é realizada automaticamente antes da execução desses testes.
 
-Bons testes.
+### ✅ Testes de API
 
-    
+**Endpoints testados:**
 
+- `POST /produtos`: 16 testes realizados.
+- `GET /produtos`: 12 testes realizados.
+
+**Dependências para criação de produtos:**
+- Criar usuário.
+- Realizar login.
+- Obter token.
+- Criar produto.
+
+**Dependências para busca de produtos:**
+- Criar usuário.
+- Realizar login.
+- Obter token.
+- Criar produto.
+- Buscar produto.
+
+## 📁 Organização dos Testes de Produto
+
+### `produtosSemDependencias/`
+Testes devem ser executados manualmente na seguinte ordem:
+- **Buscar Produto:** Criar Usuário → Login → Criar Produto → Buscar Produto.
+- **Criar Produto:** Criar Usuário → Login → Criar Produto.
+
+### `produtosComDependencias/`
+Testes com dependências incluídas são executados automaticamente.
+
+> ⚠️ Erros Esperados:
+- Tentativa de cadastro de produto já existente.
+- Tentativa de cadastro de usuário já existente.
+
+## 🛠️ Técnicas e Padrões Utilizados
+- **Pairwise Testing:** Aplicado nos testes de API para reduzir a quantidade de cenários necessários (mais de 200 combinações foram otimizadas).
+- **Page Object Model (POM):** Utilizado nos testes de UI.
+- **Fixtures:** Utilizadas em testes de UI e API para centralizar dados de entrada.
+- **Custom Commands:** Criados para reutilização de fluxos comuns em testes de UI e API.
+
+---
+
+**Bons testes! ✅**
