@@ -1,0 +1,41 @@
+{
+  "produtoCorretoParaSemDepencia": {
+    "id": "e9rLCC936vqhJiuh",
+    "nome": "gdsgfdgdasdsadaddasdaddadsadaddasdaDASDASDsdadf",
+    "preco": 430,
+    "descricao": "Mouse Gamer",
+    "quantidade": 3452
+  },
+  "produtoCorretoParaComDependenciaGet": {
+    "nome": "dsadasdadadasfdsfsdddasdadasdadadda",
+    "preco": 430,
+    "descricao": "Modasdasuse Gamer",
+    "quantidade": 3452
+  },
+  "produtoCorretoParaComDependenciaPost": {
+    "nome": "gfgdhgdasddsadasdasdadasdasdadadasdadsdasddasddadsdsaddasdaadsdsdafh",
+    "preco": 430,
+    "descricao": "Mouse Gamer",
+    "quantidade": 3452
+  },
+  "produtoIncorreto": {
+    "id": "ProdutoIndsadexistente",
+    "nome": "Produto Inexistente",
+    "preco": 54353,
+    "precoString": "aaaa",
+    "precoNaoInteiro": 0.2,
+    "precoValorZero": 0,
+    "precoValorAlto": 4.3222222222224434e+21,
+    "descricao": "O produto não existe",
+    "quantidade": 54395,
+    "quantidadeString": "aaa",
+    "quantidadeNaoInteiro": 0.3,
+    "quantidadeMenorQueZero": -1
+  },
+  "produtoVazio": {
+    "nome": "",
+    "preco": "",
+    "descricao": "",
+    "quantidade": ""
+  }
+}

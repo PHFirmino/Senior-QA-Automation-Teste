@@ -1,0 +1,138 @@
+{
+    "login": {
+        "senhaObrigatorioPosicaoUmSpan": {
+            "mensagem": "Password é obrigatório",
+            "parametro": 1
+        },
+        "senhaObrigatorioPosicaoZeroSpan": {
+            "mensagem": "Password é obrigatório",
+            "parametro": 0
+        },
+        "emailOuSenhaInvalidoPosicaoZeroSpan": {
+            "mensagem": "Email e/ou senha inválidos",
+            "parametro": 0
+        },
+        "emailObrigatorioPosicaoZeroSpan": {
+            "mensagem": "Email é obrigatório",
+            "parametro": 0
+        },
+        "emailInvalidoPosicaoZeroSpan": {
+            "mensagem": "Email deve ser um email válido",
+            "parametro": 0
+        }
+    },
+    "usuarioCadastrado":{
+        "usuarioCadastradoComSucesso": {
+            "mensagem": "Cadastro realizado com sucesso",
+            "statusCode": 201
+        }
+    },
+    "usuarioLogin":{
+        "usuarioLoginComSucesso": {
+            "mensagem": "Login realizado com sucesso",
+            "statusCode": 200
+        }
+    },
+    "produtosGet": {
+        "produtoSucesso": {
+            "statusCode": 200
+        },
+        "precoDeveSerUmNumero": {
+            "mensagem": "preco deve ser um número",
+            "statusCode": 400
+        },
+        "precoDeveSerUmInteiro": {
+            "mensagem": "preco deve ser um inteiro",
+            "statusCode": 400
+        },
+        "precoDeveSerUmNumeroPositivo": {
+            "mensagem": "preco deve ser um número positivo",
+            "statusCode": 400
+        },
+        "quantidadeDeveSerUmNumero": {
+            "mensagem": "quantidade deve ser um número",
+            "statusCode": 400
+        },
+        "quantidadeDeveSerUmInteiro": {
+            "mensagem": "quantidade deve ser um inteiro",
+            "statusCode": 400
+        },
+        "quantidadeDeveSerMaiorOuIgualAZero": {
+            "mensagem": "quantidade deve ser maior ou igual a 0",
+            "statusCode": 400
+        }
+    },
+    "produtosPost": {
+        "cadastroRealizadoComSucesso": {
+            "mensagem": "Cadastro realizado com sucesso",
+            "statusCode": 201
+        },
+        "jaExisteProdutoComEsseNome": {
+            "mensagem": "Já existe produto com esse nome",
+            "statusCode": 400
+        },
+        "nomeNaoPodeFicarEmBranco": {
+            "mensagem": "nome não pode ficar em branco",
+            "statusCode": 400
+        },
+        "nomeObrigatorio": {
+            "mensagem": "nome é obrigatório",
+            "statusCode": 400
+        },
+        "descricaoNaoPodeFicarEmBranco": {
+            "mensagem": "descricao não pode ficar em branco",
+            "statusCode": 400
+        },
+        "descricaoObrigatorio": {
+            "mensagem": "descricao é obrigatório",
+            "statusCode": 400
+        },
+        "precoObrigatorio": {
+            "mensagem": "preco é obrigatório",
+            "statusCode": 400
+        },
+        "precoDeveSerUmNumero": {
+            "mensagem": "preco deve ser um número",
+            "statusCode": 400
+        },
+        "precoDeveSerUmInteiro": {
+            "mensagem": "preco deve ser um inteiro",
+            "statusCode": 400
+        },
+        "precoDeveSerUmNumeroPositivo": {
+            "mensagem": "preco deve ser um número positivo",
+            "statusCode": 400
+        },
+        "precoValorAlto": {
+            "mensagem": "preco não pode ser maior que 9007199254740991",
+            "statusCode": 400
+        },
+        "quantidadeObrigatorio": {
+            "mensagem": "quantidade é obrigatório",
+            "statusCode": 400
+        },
+        "quantidadeDeveSerUmNumero": {
+            "mensagem": "quantidade deve ser um número",
+            "statusCode": 400
+        },
+        "quantidadeDeveSerUmInteiro": {
+            "mensagem": "quantidade deve ser um inteiro",
+            "statusCode": 400
+        },
+        "quantidadeDeveSerMaiorOuIgualAZero": {
+            "mensagem": "quantidade deve ser maior ou igual a 0",
+            "statusCode": 400
+        },
+        "semParametros": {
+            "statusCode": 400
+        },
+        "tokenDeveSerInformado": {
+            "mensagem": "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais",
+            "statusCode": 401
+        },
+        "rotaExclusiva": {
+            "mensagem": "Rota exclusiva para administradores",
+            "statusCode": 403
+        }
+    }
+}
